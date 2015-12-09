@@ -24,10 +24,10 @@ class App extends Component {
                         defaultMessage="React Intl Nested Messages Example"
                     />
                 </h1>
+
                 <Greeting
-                    messages={this.props.getIntlMessages('greeting')}
-                    messages={this.context.intl.locale}
                     {...this.state.user}
+                    messages={this.props.getIntlMessages('greeting')}
                 />
             </div>
         );
